@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "TradingView NoAds By HISL",
+    "version": "1.0",
+    "description": "Removes the annoying ads and the upgrade to pro message in TradingView. BY Mr. WHITE HIRU OFC",
+    "icon": {
+      "128": "icon-128.png"
+    },
+    "content_scripts": [
+	    {
+	      "matches": [ "*://*.tradingview.com/*" ],
+      	"js": [ "index.js" ],
+	      "run_at": "document_start"
+    	}
+    ],
+    "icons": {
+	    "128": "icon-128.png"
+    }
+}
